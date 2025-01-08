@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>Paris Sakkoulas Software Engineer</title>
+
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <h2 class="nav__logo">Paris Sakkoulas</h2>
+            <ul class="nav__links">
+                <li class="nav__item">
+                    <a class="nav__link" href="#section--1">About Me</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#section--2">Expertise</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#section--3">Projects</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link nav__link--btn btn--show-modal" href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="header__title">
+            <!-- <h1 onclick="alert('HTML alert')"> -->
+            <h1>
+                Hello,
+                <!-- Green highlight effect -->
+                <span class="highlight">I am</span>
+                Paris<br />
+                <span class="highlight">Sakkoulas</span>
+            </h1>
+            <h4>A passionate Junior Software Engineer!</h4>
+            <button class="btn--text btn--scroll-to">Let's get started &DownArrow;</button>
+
+        </div>
+    </header>
+
+    <section class="section" id="section--1">
+        <div class="section__title">
+            <h2 class="section__description">About Me</h2>
+            <h3 class="section__header">
+                Everything you need to know about me.
+            </h3>
+        </div>
+
+        <div class="features">
+            <span></span>
+            <div class="features__feature">
+                <div class="features__icon">
+                    <svg>
+                        <use xlink:href="img/icons.svg#icon-monitor"></use>
+                    </svg>
+                </div>
+                <h5 class="features__header">In 2016, I Began My Journey in Information and Communication Systems
+                    Engineering</h5>
+                <p>
+                    My passion for technology and innovation led me to pursue a degree in the Department of Information
+                    and Communication Systems Engineering at the University of the Aegean. This journey equipped me with
+                    a strong foundation in designing and developing cutting-edge systems, fueling my drive to create
+                    impactful and innovative solutions.
+                </p>
+            </div>
+
+            <div class="features__feature">
+                <div class="features__icon">
+                    <svg>
+                        <use xlink:href="img/icons.svg#icon-trending-up"></use>
+                    </svg>
+                </div>
+                <h5 class="features__header">University Journey</h5>
+                <p>
+                    While at university, I gain expertise in software
+                    development, UML, cybersecurity, and digital governance. This foundation inspired me to create
+                    innovative solutions for real-world challenges. From 2022 to 2023, I dedicated myself to developing
+                    and presenting my thesis project, showcasing the culmination of my skills and knowledge.
+                </p>
+            </div>
+            <span></span>
+
+            <span></span>
+            <div class="features__feature">
+                <div class="features__icon">
+                    <svg>
+                        <use xlink:href="img/icons.svg#icon-credit-card"></use>
+                    </svg>
+                </div>
+                <h5 class="features__header">Graduation: A New Start!</h5>
+                <p>
+                    My wonderful academic journey has come to an end! I graduated from the University of the Aegean in
+                    October 2023, after years of learning and growing. After graduating, I completed my army service,
+                    showing discipline and dedication. Now, I’m excited to start a new journey in learning and software
+                    development, ready to create and innovate.
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="section--2">
+        <div class="section__title">
+            <h2 class="section__description">Expertise</h2>
+            <h3 class="section__header">
+                Simplifying the complex, without losing its essence.
+            </h3>
+        </div>
+
+        <div class="operations">
+            <div class="operations__tab-container">
+                <button class="btn operations__tab operations__tab--1 operations__tab--active" data-tab="1">
+                    <span>01</span>Front End Developement
+                </button>
+                <button class="btn operations__tab operations__tab--2" data-tab="2">
+                    <span>02</span>Back End Developement
+                </button>
+                <button class="btn operations__tab operations__tab--3" data-tab="3">
+                    <span>03</span>Full Stack Developement
+                </button>
+            </div>
+            <div class="operations__content operations__content--1 operations__content--active">
+                <div class="operations__icon operations__icon--1">
+                    <svg>
+                        <use xlink:href="img/icons.svg#icon-upload"></use>
+                    </svg>
+                </div>
+                <h5 class="operations__header">
+                    Let's build some Front End.
+                </h5>
+                <p>
+                    I am a passionate front-end developer with a strong foundation in HTML, CSS, and JavaScript,
+                    enabling me to create clean, responsive, and dynamic web interfaces. With expertise in DOM
+                    manipulation, I ensure seamless interaction between users and applications. My proficiency in
+                    Angular allows me to build scalable, efficient, and feature-rich single-page applications, combining
+                    modern design principles with robust functionality to deliver exceptional user experiences.
+                </p>
+            </div>
+
+            <div class="operations__content operations__content--2">
+                <div class="operations__icon operations__icon--2">
+                    <svg>
+                        <use xlink:href="img/icons.svg#icon-home"></use>
+                    </svg>
+                </div>
+                <h5 class="operations__header">
+                    How About Back End?
+                </h5>
+                <p>
+                    As a back-end developer, I specialize in building robust and efficient server-side applications
+                    using Node.js and Express. My expertise includes working with relational databases like MySQL,
+                    leveraging Sequelize to streamline database interactions, and managing NoSQL databases with Mongoose
+                    for MongoDB. I am skilled at designing and implementing RESTful APIs, ensuring secure, scalable, and
+                    seamless communication between the front end and back end to deliver well-rounded applications.
+                </p>
+            </div>
+            <div class="operations__content operations__content--3">
+                <div class="operations__icon operations__icon--3">
+                    <svg>
+                        <use xlink:href="img/icons.svg#icon-user-x"></use>
+                    </svg>
+                </div>
+                <h5 class="operations__header">
+                    Full-Stack Excellence!
+                </h5>
+                <p>
+                    I am a full-stack developer with a strong foundation in both front-end and back-end
+                    technologies. On the front end, I excel in HTML, CSS, JavaScript, and DOM manipulation, crafting
+                    responsive and dynamic user interfaces. My expertise in Angular allows me to build scalable and
+                    feature-rich single-page applications with modern design principles. On the back end, I specialize
+                    in Node.js and Express for building robust server-side applications, with proficiency in working
+                    with relational databases like MySQL using Sequelize, and NoSQL databases like MongoDB with
+                    Mongoose. By combining my skills, I create seamless, secure, and efficient full-stack solutions that
+                    deliver exceptional user experiences.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="section--3">
+        <div class="section__title section__title--testimonials">
+            <h2 class="section__description">Personal Projects</h2>
+            <h3 class="section__header">
+                You can check out some of my Projects!
+            </h3>
+        </div>
+
+        <div class="slider">
+            <div class="slide">
+                <div class="testimonial">
+                    <h5 class="testimonial__header">Web Research Profile Management</h5>
+                    <blockquote class="testimonial__text">
+                        I developed an online web application to help researchers and academic staff organize and
+                        showcase their work. The platform
+                        allows users to add publications, manage profiles, and automatically import publications using
+                        identifiers from well-known sources. It features file uploads, access control, and a
+                        social networking component to foster collaboration within the academic community. Built with
+                        Angular, Node.js, Express, MySQL, and Angular Material, this project is one of my proudest
+                        achievements and a key example of my full-stack development skills.
+                    </blockquote>
+                    <address class="testimonial__author">
+                        <i class="fa-brands fa-angular"></i>
+                        <i class="fa-brands fa-node-js"></i>
+                    </address>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="testimonial">
+                    <h5 class="testimonial__header">
+                        Movies Shopping Card Back End
+                    </h5>
+                    <blockquote class="testimonial__text">
+                        Built a RESTful API that enables for
+                        managing a movie shopping platform. It includes user authentication and authorization for secure
+                        access, showcasing my expertise in building scalable, secure back-end systems with Node.js and
+                        Express.
+                    </blockquote>
+                    <address class="testimonial__author">
+                        <i class="fa-brands fa-node-js"></i>
+                    </address>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="testimonial">
+                    <h5 class="testimonial__header">
+                        Students Information Web App
+                    </h5>
+                    <blockquote class="testimonial__text">
+                        Developed a web application designed for managing courses and grades, catering to both
+                        university
+                        professors and students. It allows users to efficiently handle course information and grade
+                        management, while also being accessible to anonymous visitors for broader reach. Building upon
+                        the foundations of the Icarus Project, UniGrade Manager offers enhanced features, an intuitive
+                        interface, and advanced functionalities, providing a comprehensive and user-friendly platform
+                        for course and grade management.
+                    </blockquote>
+                    <address class="testimonial__author">
+                        <i class="fa-brands fa-angular"></i>
+                        <i class="fa-brands fa-html5"></i>
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <i class="fa-brands fa-node-js"></i>
+                    </address>
+                </div>
+            </div>
+
+            <button class="slider__btn slider__btn--left">&larr;</button>
+            <button class="slider__btn slider__btn--right">&rarr;</button>
+            <div class="dots"></div>
+        </div>
+    </section>
+
+    <section class="section section--sign-up">
+        <div class="section__title">
+            <h3 class="section__header">
+                The best time to build your vision was yesterday. The second best is now!
+            </h3>
+        </div>
+        <button class="btn btn--show-modal">Send email!</button>
+    </section>
+
+    <footer class="footer">
+        <ul class="footer__nav">
+            <li class="footer__item">
+                <a class="footer__link" href="#section--1">About</a>
+            </li>
+            <li class="footer__item">
+                <a class="footer__link" href="#section--2">Expertise</a>
+            </li>
+            <li class="footer__item">
+                <a class="footer__link" href="#section--3">Project</a>
+            </li>
+            <li class="footer__item">
+                <a class="footer__link btn--show-modal" href="#">Contact</a>
+            </li>
+        </ul>
+        <p class="footer__copyright">
+        </p>
+    </footer>
+
+
+
+    <div class="modal hidden">
+        <button class="btn--close-modal">&times;</button>
+        <h2 class="modal__header">
+            Ready to collaborate? <span class="highlight">Let's connect!</span>
+        </h2>
+        <!--
+        <form class="modal__form">
+            <label>First Name</label>
+            <input type="text" />
+            <label>Last Name</label>
+            <input type="text" />
+            <label>Email Address</label>
+            <input type="email" />
+            <button class="btn">Next step &rarr;</button>
+        </form>
+        -->
+
+        <ul class="contact_info">
+
+            <li class="contact_item">
+                <a class="contact__link" href="#"><i class="fa-regular fa-envelope"></i>parissakkoulas@gmail.com</a>
+            </li>
+
+
+            <li class="contact_item">
+                <a class="contact__link" href="https://github.com/ParisSakkoulas"><i class="fa-brands fa-github"></i>Git
+                    Hub</a>
+            </li>
+
+            <li class="contact_item">
+                <a class="contact__link" href="https://www.linkedin.com/in/paris-sakkoulas-084590223/"><i
+                        class="fa-brands fa-linkedin"></i>parissakkoulas@gmail.com</a>
+            </li>
+
+
+            <li class="contact_item">
+                <a class="contact__link" href="./assets/ParisSakkoulasSoftwareDeveloperCV.pdf"
+                    download="ParisSakkoulasSoftwareDeveloperCV.pdf"><i class="fa-regular fa-file"></i>Get my CV</a>
+            </li>
+        </ul>
+
+
+    </div>
+    <div class="overlay hidden"></div>
+
+    <!-- <script src="script.js"></script> -->
+</body>
+
+</html>
