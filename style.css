@@ -738,6 +738,16 @@ h4 {
 }
 
 
+.project_header_link {
+    color: black;
+    text-decoration: none
+}
+
+.project_header_link:hover {
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
 
 /* Responsive Styles */
 @media (max-width: 1024px) {
