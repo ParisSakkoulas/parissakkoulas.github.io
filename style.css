@@ -768,6 +768,11 @@ h4 {
         font-size: 1rem;
     }
 
+    .features__header {
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+
     .operations__tab-container {
         flex-wrap: wrap;
     }
@@ -794,7 +799,7 @@ h4 {
     }
 
     .features {
-        gap: 2rem;
+        gap: 1rem;
         margin: 0 1rem;
     }
 
