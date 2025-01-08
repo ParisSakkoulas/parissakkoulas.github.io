@@ -773,6 +773,41 @@ h4 {
         margin-bottom: 5px;
     }
 
+
+    /* -----------------*/
+
+    .slider {
+        width: 100%;
+        height: 70rem;
+        margin: 0 auto;
+        position: relative;
+        /* IN THE END */
+        overflow: hidden;
+    }
+
+
+    .slide {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 70rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* THIS creates the animation! */
+        transition: transform 1s;
+    }
+
+    .testimonial__header {
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+
+
+
+
+    /* -----------------*/
+
     .operations__tab-container {
         flex-wrap: wrap;
     }
@@ -786,9 +821,7 @@ h4 {
         padding: 2rem;
     }
 
-    .slider {
-        height: 70rem;
-    }
+
 }
 
 @media (max-width: 768px) {
