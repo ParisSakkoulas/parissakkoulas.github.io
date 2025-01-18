@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
     <link rel="shortcut icon" type="image/png" href="img/icon.png" />
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap" rel="stylesheet" />
@@ -16,6 +17,18 @@
 </head>
 
 <body>
+    <!-- Add this just before the header section -->
+    <div id="mobile-menu" class="mobile-menu hidden">
+        <div class="mobile-menu-content">
+            <button class="mobile-menu-close">&times;</button>
+            <nav class="mobile-nav">
+                <a href="#section--1" class="mobile-nav-item">About Me</a>
+                <a href="#section--2" class="mobile-nav-item">Expertise</a>
+                <a href="#section--3" class="mobile-nav-item">Projects</a>
+                <a href="#" class="mobile-nav-item btn--show-modal">Contact</a>
+            </nav>
+        </div>
+    </div>
     <header class="header">
         <nav class="nav">
             <h2 class="nav__logo">Paris Sakkoulas</h2>

@@ -291,7 +291,70 @@ const slider = function () {
         }
     });
 };
+
 slider();
+
+
+// Mobile Navigation Toggle
+const navLinks = document.querySelector('.nav__links');
+const hamburgerBtn = document.createElement('div');
+hamburgerBtn.classList.add('hamburger');
+hamburgerBtn.innerHTML = `
+    <div class="hamburger-line"></div>
+    <div class="hamburger-line"></div>
+    <div class="hamburger-line"></div>
+`;
+
+// Only add hamburger menu on smaller screens
+if (window.innerWidth <= 768) {
+    const nav = document.querySelector('.nav');
+    nav.insertBefore(hamburgerBtn, nav.firstChild);
+
+    hamburgerBtn.addEventListener('click', function () {
+        navLinks.classList.toggle('active');
+
+        // Optional: Animate hamburger to close icon
+        this.classList.toggle('open');
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function (event) {
+        if (!nav.contains(event.target) && navLinks.classList.contains('active')) {
+            navLinks.classList.remove('active');
+        }
+    });
+}
+
+// Responsive design adjustments
+window.addEventListener('resize', function () {
+    const nav = document.querySelector('.nav');
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav__links');
+
+    if (window.innerWidth > 768) {
+        navLinks.classList.remove('active');
+        if (hamburger) {
+            nav.removeChild(hamburger);
+        }
+        navLinks.style.display = 'flex';
+    } else {
+        if (!hamburger) {
+            const hamburgerBtn = document.createElement('div');
+            hamburgerBtn.classList.add('hamburger');
+            hamburgerBtn.innerHTML = `
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            `;
+            nav.insertBefore(hamburgerBtn, nav.firstChild);
+        }
+        navLinks.style.display = 'none';
+    }
+});
+
+
+
+
 
 ///////////////////////////////////////
 ///////////////////////////////////////
